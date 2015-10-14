@@ -7,13 +7,7 @@ namespace FizzBuzzServices.Models
     public class NoMatch : IMatchCriteria
     {
         public CriteriaType CriteriaType { get { return CriteriaType.None; } }
-        
-        /// <summary>
-        /// Determines if the current number matches the criteria
-        /// and returns a bool to indicate
-        /// </summary>
-        /// <param name="thisNumber"></param>
-        /// <returns></returns>
+
         public bool IAmThisNumber(int thisNumber)
         {
             // 1.) Evaluate if the number is 0 so it doesn't cause 
