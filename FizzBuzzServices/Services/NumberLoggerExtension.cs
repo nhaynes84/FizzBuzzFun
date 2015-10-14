@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FizzBuzzServices.Models;
+﻿using FizzBuzzServices.Models;
 using FizzBuzzServices.Strategies;
 
 namespace FizzBuzzServices.Services
@@ -19,7 +14,7 @@ namespace FizzBuzzServices.Services
         /// <param name="type"></param>
         public static void LogNumber(this int number, CriteriaType type)
         {
-            // calling our context to resolve our number type and call the correct Print method.
+            // calling our context to resolve our number type and return the correct Print method.
             var context = new NumberContext();         
             context.PrintRelationships(number, type);
         }

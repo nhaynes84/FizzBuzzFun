@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FizzBuzzServices.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using FizzBuzzServices.Models;
 
 namespace FizzBuzzServices.Tests.Models
 {
@@ -14,13 +9,13 @@ namespace FizzBuzzServices.Tests.Models
         [TestMethod]
         public void IAmThisNumber_ValidNoMatch_ReturnsTrue()
         {
-            //arrange
+            // arrange
             var none = new NoMatch();
             
             // act
             var answer = none.IAmThisNumber(0);
 
-            //assert
+            // assert
             Assert.AreEqual(CriteriaType.None, none.CriteriaType);
             Assert.IsTrue(answer);
         }
@@ -28,13 +23,13 @@ namespace FizzBuzzServices.Tests.Models
         [TestMethod]
         public void IAmThisNumber_InvalidNoMatch_ReturnsFalse()
         {
-            //arrange
+            // arrange
             var none = new NoMatch();
 
             // act
             var answer = none.IAmThisNumber(12);
 
-            //assert
+            // assert
             Assert.IsFalse(answer);
         }
     }

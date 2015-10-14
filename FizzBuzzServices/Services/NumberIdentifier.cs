@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FizzBuzzServices.Interfaces;
+﻿using FizzBuzzServices.Interfaces;
 using FizzBuzzServices.Models;
 using FizzBuzzServices.Strategies;
+using System.Linq;
 namespace FizzBuzzServices.Services
 {
     public class NumberIdentifier : ICanIdentify
@@ -28,7 +24,8 @@ namespace FizzBuzzServices.Services
                 }
             }
 
-            // if somehow it is none of the above then return None but this should never get hit.
+            // if somehow it is none of the above then return None 
+            // This should never get hit but it is best to handle it with a value.
             return CriteriaType.None;
         }
     }

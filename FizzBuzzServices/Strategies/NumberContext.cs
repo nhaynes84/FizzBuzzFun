@@ -1,12 +1,8 @@
-﻿using System;
+﻿using FizzBuzzServices.Interfaces;
+using FizzBuzzServices.Models;
+using FizzBuzzServices.Strategies.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FizzBuzzServices.Models;
-using FizzBuzzServices.Strategies;
-using FizzBuzzServices.Strategies.Interfaces;
-using FizzBuzzServices.Interfaces;
 
 namespace FizzBuzzServices.Strategies
 {
@@ -16,7 +12,7 @@ namespace FizzBuzzServices.Strategies
 
         public NumberContext()
         {
-            // Initializing and building out Strategy dictionary for contextual reference.
+            // Initializing and building our Strategy dictionary for contextual reference.
             // Nested a dictionary as a value to determine if a number meets criteria.
             Strategies = new Dictionary<CriteriaType, Dictionary<IMatchCriteria, INumberStrategy>>();
 

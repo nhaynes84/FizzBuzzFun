@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FizzBuzzServices.Strategies.Interfaces;
+﻿using FizzBuzzServices.Strategies.Interfaces;
+using System;
 
 namespace FizzBuzzServices.Strategies
 {
@@ -11,7 +7,7 @@ namespace FizzBuzzServices.Strategies
     {
         /// <summary>
         /// If the number doesn't match our other strategies then
-        /// this is the print method that gets called.
+        /// this is the print method that gets called. Kind of NullObject pattern.
         /// </summary>
         public void PrintRelationships(int number)
         {

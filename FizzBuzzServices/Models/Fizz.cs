@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FizzBuzzServices.Interfaces;
+﻿using FizzBuzzServices.Interfaces;
 
 namespace FizzBuzzServices.Models
 {
@@ -11,6 +6,12 @@ namespace FizzBuzzServices.Models
     {
         public CriteriaType CriteriaType { get { return CriteriaType.Fizz; } }
 
+        /// <summary>
+        /// Determines inf the current number matches the criteria
+        /// and returns a bool to indicate
+        /// </summary>
+        /// <param name="thisNumber"></param>
+        /// <returns></returns>
         public bool IAmThisNumber(int thisNumber)
         {
             return ((thisNumber % 3) == 0);

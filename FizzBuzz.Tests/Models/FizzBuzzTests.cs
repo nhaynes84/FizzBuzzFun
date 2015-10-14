@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace FizzBuzzServices.Tests.Models
 {
@@ -13,13 +8,13 @@ namespace FizzBuzzServices.Tests.Models
         [TestMethod]
         public void IAmThisNumber_ValidFizzBuzz_ReturnsTrue()
         {
-            //arrange
+            // arrange
             var fizzBuzz = new FizzBuzzServices.Models.FizzBuzz();
             
             // act
             var answer = fizzBuzz.IAmThisNumber(15);
 
-            //assert
+            // assert
             Assert.AreEqual(FizzBuzzServices.Models.CriteriaType.FizzBuzz, fizzBuzz.CriteriaType);
             Assert.IsTrue(answer);
         }
