@@ -6,7 +6,7 @@ namespace FizzBuzzServices.Services
     public static class NumberLoggerExtension
     {
         /// <summary>
-        /// Takes in a number and an Enum type, Fizz, Buzz, FizzBuzz or None
+        /// Takes in a number and a type, Fizz, Buzz, FizzBuzz or None
         /// and writes the appropriate output to the console app. This is a static class
         /// so it wouldn't be a bad idea to write an adapter for it (DI and testing purposes)
         /// </summary>
